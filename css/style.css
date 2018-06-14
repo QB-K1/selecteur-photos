@@ -1,0 +1,91 @@
+/*---------------------------J'appelle mes polices---------------------------------*/
+
+@font-face {
+    font-family: "#";
+    src: url(../fonts/#);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*----------------------------Style général----------------------------------------*/
+
+
+/*Je précise ma box-sizing (pour une width qui prenne le padding)*/
+* {
+	box-sizing: border-box;
+}
+
+/*Je colle mon body aux dimensions de la page web*/
+body {
+	margin: 0;
+}
+
+/*Je stylise la liste*/
+#photo-list {
+    width : 800px;
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    margin: 1em;
+    padding: 0.5em;
+}
+
+    /*Quand survole une image*/
+    li:hover {
+        background-color: silver;
+        transform: scale(1.5); /*J'agrandis l'image*/
+        border-radius: 15%; /*Je rogne les coins*/
+            transition: 1s ease-in-out 0s;
+    }
+
+/*Quand clique sur une image, lui donnera cette classe*/
+.selected {
+    background-color: forestgreen;
+        transition: 1s ease-in-out 0s;
+}
+
+/*Je stylise le numéro de photo affiché en bas*/
+#imgSelect {
+    font-style:italic;
+    font-weight: bold;
+    color : red;
+
+}
+
+
+/*Je précise le style de mon footer*/
+
+#licence {
+    clear: both; /*Pour qu'elle repasse en-dessous de article et aside en mobile*/
+    display: block;
+    text-align: center;
+    padding: 1.3em;
+}
+
+#licence img {
+    width: 2.5em;
+}
+
+#licence a {
+    text-decoration: none; /*Je retire le soulignage des liens*/
+}
+
+
+/*-------------------------------Responsive-------------------------------------------*/
+
+/*Propriétés CSS pour tablettes et gros téléphones qui cascadent sur le mobile*/
+@media screen and (max-width: 768px)
+{
+    
+}
+
+/*-------------------------------Responsive-------------------------------------------*/
+
+/*Propriétés CSS pour affichage mobile, prenant déjà en compte le précédent @media*/
+@media screen and (max-width: 480px) 
+{
+
+}
